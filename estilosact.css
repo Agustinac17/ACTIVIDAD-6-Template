@@ -1,0 +1,315 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    background-color: #222;
+    color: #fff;
+    padding: 20px 40px;
+    font-family: 'Times New Roman', Times, serif;
+    border-bottom-style:solid;
+    border-bottom-color:#aaf845;
+    border-bottom-width:4px;
+}
+
+header h1 {
+    margin: 0;
+    font-weight: 300;
+    font-size: 2em;
+}
+
+header p {
+    margin: 5px 0 20px;
+}
+
+.header-izquierda {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-derecha {
+    display: flex;
+}
+
+nav ul {
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    display: flex;
+    justify-content: right;
+    background-color: #333;
+    border-radius: 30px;
+    box-shadow: inset 0 -10px 35px rgba(15, 15, 15, 0.767);
+    transition: background-color 0.3s ease;
+    justify-content: flex-end
+}
+
+nav ul li {
+    position: relative;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color:#a5a19a;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    padding: 12px 20px;
+    border-radius: 20px;
+}
+
+nav ul li a:hover {
+    color: #aaf845;
+}
+
+nav ul li:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -15px;
+    width: 2px;
+    height: 20px;
+    background-color: #1b1a1a;
+    transform: translateY(-50%);
+}
+
+
+/*-------HASTA ACA TODO OK-----------------------------
+
+-----------------------------------*/
+.container {
+    display: flex;
+    gap: 20px;
+    max-width: 700px;
+    margin: 40px auto;
+    background-color: transparent;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(255, 0, 0, 0.1);
+    padding: 20px;
+}
+.hero {
+    display: flex;
+    flex-direction: row;
+    /*background-color: #444;*/
+    color: #fff;
+    padding: 35px;
+    justify-content: space-between;
+    align-items: center;
+    -webkit-box-shadow: inset 0px -200px 137px 141px rgb(221, 220, 221);
+    -moz-box-shadow: inset 0px -200px 137px 141px rgba(46,45,46,1);
+    box-shadow: inset 0px -200px 137px 141px rgba(46,45,46,1);
+}
+
+.hero-image img {
+    width: 300px;
+    height: auto;
+    border-width: 7px;
+    border-style:solid;
+    border-color:#a5a19a;
+    margin-left: 20px;
+    /*box-shadow: 0px 6px 20px #000000;*/
+}
+
+.hero-content {
+    margin-left: 20px;
+}
+.hero-content h2 {
+    font-weight: 300;
+}
+.hero-content p {
+    font-weight: 300;
+    color:#a5a19a;
+}
+
+.read-more {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color:#aaf845;
+    color: #000000;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: inset 0 -10px 10px rgba(15, 15, 15, 0.288);
+}
+/*-------HASTA ACA TODO OK-----------------------------
+
+-----------------------------------*/
+
+.container-dos {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.welcome {
+    flex: 2;
+    padding: 20px;
+}
+.welcome h6{
+    color: #ffffff;
+    border-top-style:solid;
+    border-top-color:#aaf845;
+    border-top-width:3px;
+    padding: 0px;
+    margin: 0px;
+    margin-right: 530px;
+}
+
+.welcome h2 {
+    color: #080808;
+    font-weight: 200;
+    font-size: 1.8em;
+    border-bottom-style:solid;
+    border-bottom-color:#aaf845;
+    border-bottom-width:2px;
+    padding: 0px;
+    margin: 0px;
+}
+.en-negrita{
+    font-weight: bold;
+}
+.welcome ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+.barra-verde {
+    border-left-style:solid;
+    border-left-color:#aaf845;
+    border-left-width:8px;
+    padding-left: 6px;
+}
+
+/*------------------------------------*/
+
+.encabezado {
+    text-align: left;
+    background-color: #2e2a2a;
+    box-shadow: inset 0 -10px 10px rgba(15, 15, 15, 0.466);
+    padding: 20px;
+    color:#ecebe8;
+    box-shadow: inset 0px -1px 6px #ffffff, inset 0px 3px 10px #000000;
+    border-bottom-style:solid;
+    border-bottom-color:#131313;
+    border-bottom-width:1px;
+    font-weight: 300;
+}
+
+.latest-news img{
+    border-width: 5px;
+    border-style:solid;
+    border-color:#e4e3e2;
+    box-shadow: 0px 0px 2px #000000;
+    margin-left: 25px;
+    margin-top: 25px;
+    
+}
+
+.latest-news {
+    flex: 1;
+    background-color: #eee;
+    padding: 0px;
+    margin-right: 20px;
+}
+
+.latest-news h3 {
+    color: #a5a19a;
+    font-weight: 300;
+    margin: 0;
+    padding-top: 25px;
+    margin-left: 15px;
+}
+.latest-news h4 {
+    margin: 0;
+    padding: 0;
+    margin-left: 15px;
+    margin-left: 15px;
+}
+.latest-news h5 {
+    margin: 0;
+    padding: 0;
+    margin-left: 15px;
+}
+
+.latest-news ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.latest-news ul li {
+    margin-bottom: 10px;
+}
+
+.latest-news ul li span {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/*-------HASTA ACA TODO OK-----------------------------
+
+-----------------------------------*/
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    font-family: Arial, sans-serif;
+    border-top-style:solid;
+    border-top-color:#aaf845;
+    border-top-width:4px;
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-columns > div {
+    flex: 2;
+    margin: 10px;
+}
+
+.footer-columns h4 {
+    font-weight: 200;
+    margin: 0px;
+    padding: 5px;
+    border-radius: 45px;
+    background-color:  #3d3c3c;
+    box-shadow: inset 0 -10px 10px rgba(15, 15, 15, 0.466);
+}
+
+.footer-columns ul {
+    list-style-type: none;
+    padding: 0;
+    margin-left: 15px;
+    font-size: small;
+    color: #c5c5c5;
+}
+
+.footer-columns ul li {
+    margin-bottom: 10px;
+}
+
+footer p {
+    text-align: justify;
+    margin-top: 20px;
+    font-size: 14px;
+    padding-top: 20px;
+}
+/*-------HASTA ACA TODO OK-----------------------------
+
+-----------------------------------*/
